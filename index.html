@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GR Survey Form</title>
+</head>
+<body>
+    <a href="https://www.csun.edu/src/games-room"><img src="GR2017.png" alt="Games Room Logo"></a>
+    <h1>CSUN Game Room Survey Form</h1>
+    <p>Thank you for visiting the CSUN Game Room! If you please take a couple minutes to fill out the following survey, that will be highly appreciated. THANK YOU!!!</p>
+    <form mehtod="post" action="https://drive.google.com/drive/folders/120EIY2cyWmhMIktQ7pxXuFTkketed9CX?usp=sharing">
+        <fieldset>
+            <!--User info-->
+            <label for="first-name">Enter your first name: <input name="first-name" id="first-name" type="text" required></label>
+            <label for="last-name">Enter your last name: <input name="last-name" id="last-name" type="text" required></label>
+            <label for="ID-number">Enter your CSUN ID number: <input id="ID-number" name="ID" type="text" minlength="9" maxlength="9" pattern="[0-9]" required></label>
+        </fieldset>
+        <fieldset>
+            <!--What year is the student-->
+            <legend>Student Year (required)</legend>
+            <label for="freshman"><input name="student-year" id="freshman-year" type="radio" class="inline" required checked>Freshman</label>
+            <label for="sophmore"><input name="student-year" id="sophmore-year" type="radio" class="inline" required>Sophmore</label>
+            <label for="junior"><input name="student-year" id="junior-year" type="radio" class="inline" required>Junior</label>
+            <label for="senior"><input name="student-year" id="senior-year" type="radio" class="inline" required>Senior</label>
+        </fieldset>
+        <fieldset>
+            <!--What did they use?-->
+            <label for="service">What service did you use in your time in the Game Room? <select name="service" id="service" required>
+                <option value="">(select one)</option>
+                <option value="1">PC</option>
+                <option value="2">Pool Table</option>
+                <option value="3">Consoles (PS5/Nintendo Switch)</option>
+                <option value="4">Other</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <!--suggestions-->
+            <label for="service">Are there any services yout would like to added to the Game Room? <textarea name="service" id="service" cols="30" rows="3" placeholder="I would like a free headphone service to be added to the Game Room."></textarea></label>
+            <label for="games">Are there any games you would like to be added to the Game Room's collection? (Please add which platform the addition would be played in the Game Room) <textarea name="games" id="games" cols="30" rows="3" placeholder="I would like Minecraft to be added to the PC in the Game Room"></textarea></label>
+        </fieldset>
+        <label for="terms-and-condition">
+            <input class="inline" id="terms-and-condition" type="checkbox" required name="terms-and-conditions">I accept the <a href="https://www.csun.edu/sites/default/files/900-12.pdf">terms-and-conditions</a>
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
